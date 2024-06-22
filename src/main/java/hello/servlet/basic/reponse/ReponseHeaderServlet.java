@@ -28,8 +28,10 @@ public class ReponseHeaderServlet extends HttpServlet {
         cookie(response);
         redirect(response);
 
+        //단순 텍스트 응답
         PrintWriter writer = response.getWriter();
         writer.println("안녕하세요");
+
     }
 
     private void content(HttpServletResponse response) {
